@@ -12,9 +12,9 @@ fn main ()
     let acer_amt = 250_000.00;
 
     let sum_qty = toshiba_qty + mac_qty + hp_qty + dell_qty + acer_qty;
-    let sum_amt = toshiba_amt + mac_amt + hp_amt + dell_amt + acer_amt;
+    let sum_amt = (toshiba_amt * toshiba_qty) + (mac_amt * mac_qty) + (hp_amt * hp_qty) + (dell_amt * dell_qty) + (acer_amt * acer_qty);
 
-    let num_item = 5.00;
+    let num_item = toshiba_qty + mac_qty + hp_qty + dell_qty + acer_qty;
     let average = sum_amt / num_item;
 
     println! ("Total Quantity: {}", sum_qty);
