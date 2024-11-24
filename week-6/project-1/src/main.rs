@@ -15,9 +15,7 @@ fn main() {
 
     println!("Enter your order (P, F, A, E, W): ");
     let mut input1 = String::new();
-    io::stdin()
-        .read_line(&mut input1)
-        .expect("Failed to read input");
+    io::stdin().read_line(&mut input1).expect("Failed to read input");
     let food_code = input1.trim().to_uppercase(); 
 
     let mut item_price = 0;
